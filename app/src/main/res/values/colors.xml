@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FBDAD3</color>
+    <color name="colorPrimaryDark">#fb7b8f</color>
+    <color name="colorAccent">#970099</color>
+    <color name="colorForGradientBack">#FBDAD3</color>
+    <color name="colorForMainGradientBack">#ea80fc</color>
+    <color name="secondaryColor">#757b87</color>
+    <color name="settingsColor">#a1887f</color>
+    <color name="materialBlack">#212121</color>
+    <color name="lightOrange">#ffccbc</color>
+    <color name="darkishWhite">#e0e0e0</color>
+    <color name="arkaiColor">#B388FF</color>
+    <color name="forUnRegistered">#757b87</color>
+</resources>

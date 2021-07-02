@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/dialog_gradient"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:id="@+id/closeButton_handleMedia"></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/firstCardView_handleMedia"
+                        app:cardCornerRadius="20dp"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/no_photo"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:id="@+id/handleMedia_firstPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/first_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/secondCardView_handleMedia"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/no_photo"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"
+                                android:id="@+id/handleMedia_secondPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/second_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/thirdCardView_handleMedia"
+                        app:cardCornerRadius="20dp"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/no_photo"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"
+                                android:id="@+id/handleMedia_thirdPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/third_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/fourthCardView_handleMedia"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/no_photo"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"
+                                android:id="@+id/handleMedia_fourthPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/fourth_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/fifthCardView_handleMedia"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/no_photo"
+                                android:id="@+id/handleMedia_fifthPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/fifth_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/sixthCardView_handleMedia"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/no_photo"
+                                android:id="@+id/handleMedia_sixthPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/sixth_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/seventhCardView_handleMedia"
+                        app:cardCornerRadius="20dp"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/no_photo"
+                                android:id="@+id/handleMedia_seventhPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/seventh_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:id="@+id/eighthCardView_handleMedia"
+                        app:cardCornerRadius="20dp"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/no_photo"
+                                android:id="@+id/handleMedia_eighthPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/eighth_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="20dp"
+                        android:id="@+id/ninthCardView_handleMedia"
+                        android:elevation="2dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/no_photo"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"
+                                android:id="@+id/handleMedia_ninthPhoto"></ImageView>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/add_button"
+                                android:id="@+id/ninth_addButton_dialog"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="bottom|right"></ImageView>
+
+                        </FrameLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/addPhoto_handleMedia"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/curved_buttons"
+                android:textColor="@color/colorForGradientBack"
+                android:textStyle="bold"
+                android:text="Add Photos"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

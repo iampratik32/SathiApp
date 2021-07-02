@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gray_purple_gradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/verifyPhonePage_textEnterCode"
+            android:layout_marginLeft="30dp"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorForGradientBack"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/verifyFromPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:hint="  Verification Code"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/phoneVerify_buttonVerify"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/themed_buttons"
+        android:textColor="@color/colorForGradientBack"
+        android:textStyle="bold"
+        android:text="Verify"></Button>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:id="@+id/verifyPhone_progressBar"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"></ProgressBar>
+
+</LinearLayout>

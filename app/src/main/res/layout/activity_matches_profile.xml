@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="15"
+    android:background="@drawable/light_gradient"
+    tools:context=".MatchesProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/relativeLayout_matchesProfile"
+        android:layout_weight="6">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/viewPager_matchesProfile"
+            android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/closeButton_matchesProfile"
+            android:src="@drawable/bw_close"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"></ImageView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:civ_border_width="3dp"
+            android:layout_margin="15dp"
+            app:civ_border_color="@color/darkishWhite"
+            android:src="@drawable/no_photo"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/displayPicture_matchesProfile"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inside_chat_icon"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/chatIcon_matchesProfile"
+            android:layout_alignParentBottom="true"></ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_weight="9">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Name"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/userName_matchesProfile"
+                        android:textSize="65px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Age"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/userAge_matchesProfile"
+                        android:textSize="50px"></TextView>
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:visibility="gone"
+                        android:src="@drawable/verified"
+                        android:id="@+id/verified_matches"
+                        android:layout_marginLeft="10dp"></ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/userBio_matchesProfile"
+                    android:textColor="@color/secondaryColor"
+                    android:textStyle="italic"
+                    android:text="Bio"
+                    android:textSize="40px"></TextView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"></Space>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location_on_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/materialBlack"
+                        android:text="Location"
+                        android:id="@+id/userLocation_matchesProfile"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_people_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/materialBlack"
+                        android:text="Preference"
+                        android:id="@+id/userPreference_matchesProfile"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/workLayout_matchesProfile"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_work_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/materialBlack"
+                        android:text="Work"
+                        android:id="@+id/userWork_matchesProfile"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/statusLayout_matchesProfile"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_supervisor_account_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/materialBlack"
+                        android:text="Status"
+                        android:id="@+id/userStatus_matchesProfile"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/schoolLayout_matchesProfile"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_school_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/materialBlack"
+                        android:text="School"
+                        android:id="@+id/userSchool_matchesProfile"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/collegeLayout_matchesProfile"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_account_balance_black_24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/materialBlack"
+                        android:text="College"
+                        android:id="@+id/userCollege_matchesProfile"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="10"
+                    android:id="@+id/lookingForLayout_matchesProfile"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/materialBlack"
+                        android:textStyle="bold"
+                        android:text="I'm Looking For,"
+                        android:textSize="43px"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/userLookingFor_matchesProfile"
+                        android:textColor="@color/materialBlack"
+                        android:textStyle="italic"
+                        android:text="ADADS"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:id="@+id/userHobbies_layoutMatches"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/materialBlack"
+                        android:textStyle="bold"
+                        android:text="Hobbies"
+                        android:textSize="43px"></TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:id="@+id/recyclerView_matchesActivity"></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"></View>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

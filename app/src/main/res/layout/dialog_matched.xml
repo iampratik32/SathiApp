@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/gray_purple_gradient"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:animateLayoutChanges="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:id="@+id/matchedGif"
+                android:layout_height="200dp"
+                android:src="@drawable/matched"></pl.droidsonroids.gif.GifImageView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/no_photo"
+                android:id="@+id/matchedUserPhoto_dialogMatched"
+                android:visibility="invisible"
+                android:layout_gravity="center"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:visibility="invisible"
+                android:id="@+id/userName_dialogMatched"
+                android:layout_gravity="center"></TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:id="@+id/okButton_matchedDialog"
+                android:background="@drawable/curved_buttons"
+                android:text="Ok"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

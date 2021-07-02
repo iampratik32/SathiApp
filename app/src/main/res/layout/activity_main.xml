@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_application_gradient_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottom_navigator"
+        android:theme="@style/BottomNavigationTheme"
+        android:layout_height="43dp"
+        android:background="@drawable/main_application_gradient_background"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_navigator"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <View
+        android:id="@+id/second_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FBDAD3" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mainActivityFrameLayout"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:id="@+id/mainSathiLogo_mainActivity"
+                    android:src="@drawable/sathi_logo_without_background"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorForGradientBack"
+                    android:textSize="35px"
+                    android:id="@+id/noOne_mainActivity"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="italic"
+                    android:text="There's no one new in your area at this moment"></TextView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

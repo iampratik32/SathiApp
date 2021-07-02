@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">SathiJivanko</string>
+    <string name="phone_number">&lt;u>Your Phone Number&lt;/u>:</string>
+    <string name="email_address">&lt;u>Your Email Address&lt;/u>:</string>
+    <string name="verify_code">&lt;u>Enter Verification Code&lt;/u>:</string>
+    <string name="phoneClickContinue">When you press "Continue" to Move Forward, Sathi will send you a text with a verification code. Only then the verified number can be used to login. Message or Data Rate may apply. </string>
+    <string name="facebook_app_id">180304343337101</string>
+    <string name="fb_login_protocol_scheme">fb180304343337101</string>
+    <string name="finalHurdleNewUser">When you press continue to move forward, you have confirmed that you are 18 years of age and agree to all the terms and conditions that are set by Sathi.</string>
+    <string name="firstReasonDelete">I found someone.</string>
+    <string name="secondReasonDelete">I want a fresh start.</string>
+    <string name="thirdReasonDelete">Sathi was a bit much.</string>
+    <string name="fourthReasonDelete">I need a break</string>
+    <string name="fifthReasonDelete">Other</string>
+    <string name="enableLocation">To use Sathi you must enable your device Location.</string>
+    <string name="notVerifed">It seems like you have not been verified. Check your email to complete registration.</string>
+    <string name="verifyThing">You can verify by uploading your own photo. The uploaded photo must match the pictures of your account.</string>
+
+    <string-array name="list_of_gender">
+        <item>Man</item>
+        <item>Woman</item>
+    </string-array>
+    <string-array name="list_of_status">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>Widow</item>
+    </string-array>
+    <string-array name="list_of_preference">
+        <item>Woman</item>
+        <item>Man</item>
+        <item>Both</item>
+    </string-array>
+
+    <string-array name="Bagmati">
+        <item>Kathmandu Valley</item>
+        <item>Dhading</item>
+        <item>Kavrepalanchok</item>
+        <item>Nuwakot</item>
+        <item>Rasuwa</item>
+        <item>Sindhupalchok</item>
+    </string-array>
+
+    <string-array name="Dhawalagiri">
+        <item>Baglung</item>
+        <item>Mustang</item>
+        <item>Myagdi</item>
+        <item>Parbat</item>
+    </string-array>
+
+    <string-array name="Mahakali">
+        <item>Baitadi</item>
+        <item>Dadeldhura</item>
+        <item>Darchula</item>
+        <item>Kanchanpur</item>
+    </string-array>
+
+    <string-array name="Mechi">
+        <item>Ilam</item>
+        <item>Jhapa</item>
+        <item>Panchthar</item>
+        <item>Taplejung</item>
+    </string-array>
+
+    <string-array name="Bheri">
+        <item>Banke</item>
+        <item>Bardiya</item>
+        <item>Dailekh</item>
+        <item>Surkhet</item>
+        <item>Jajarkot</item>
+    </string-array>
+
+    <string-array name="Narayani">
+        <item>Bara</item>
+        <item>Chitwan</item>
+        <item>Makwanpur</item>
+        <item>Parsa</item>
+        <item>Rautahat</item>
+    </string-array>
+
+    <string-array name="Rapti">
+        <item>Dang Deokhuri</item>
+        <item>Pyuthan</item>
+        <item>Rolpa</item>
+        <item>Rukum</item>
+        <item>Salyan</item>
+    </string-array>
+
+    <string-array name="Gandaki">
+        <item>Gorkha</item>
+        <item>Kaski</item>
+        <item>Lamjung</item>
+        <item>Manang</item>
+        <item>Syangja</item>
+        <item>Tanahu</item>
+    </string-array>
+
+    <string-array name="Seti">
+        <item>Achham</item>
+        <item>Bajhang</item>
+        <item>Bajura</item>
+        <item>Doti</item>
+        <item>Kailali</item>
+    </string-array>
+
+    <string-array name="Sagarmatha">
+        <item>Khotang</item>
+        <item>Okhaldhunga</item>
+        <item>Saptari</item>
+        <item>Siraha</item>
+        <item>Solukhumbu</item>
+        <item>Udayapur</item>
+    </string-array>
+
+    <string-array name="Janakpur">
+        <item>Dhanusa</item>
+        <item>Dholkha</item>
+        <item>Mahottari</item>
+        <item>Ramechhap</item>
+        <item>Sarlahi</item>
+        <item>Sindhuli</item>
+    </string-array>
+
+    <string-array name="Koshi">
+        <item>Bhojpur</item>
+        <item>Dhankuta</item>
+        <item>Morang</item>
+        <item>Sankhuwasabha</item>
+        <item>Sunsari</item>
+        <item>Terhathum</item>
+    </string-array>
+
+    <string-array name="Lumbini">
+        <item>Arghakhanchi</item>
+        <item>Gulmi</item>
+        <item>Kapilvastu</item>
+        <item>Nawalparasi</item>
+        <item>Palpa</item>
+        <item>Rupandehi</item>
+    </string-array>
+
+    <string-array name="Karnali">
+        <item>Dolpa</item>
+        <item>Humla</item>
+        <item>Jumla</item>
+        <item>Kalikot</item>
+        <item>Mugu</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="saftey">
+
+        Sathi Safety and Policy Center \n
+\nOur Commitment:\n
+We take the safety, security and well-being of our users very seriously. As the world’s most popular app for meeting new people, we take pride in connecting millions of people every day. While a relatively small percentage of these matches have led to users falling victim to criminal activity, we firmly believe any incident of misconduct or criminal behavior is one too many. 
+We are continuously exploring new updates, partnerships and technologies to enhance and inform our safety efforts while fostering a respectful environment for meeting new people. Information about our safety tools and practices can be found below. Whether you’re in Asia, Europe or America - our goal remains the same: a safe and positive experience for users on our platform.
+\n\nOur Safety Tools:\n
+We utilize a network of industry-leading automated and manual moderation and review tools, systems and processes - and invest significant resources - to prevent, monitor and remove inappropriate behavior (impersonation, harassment and more) from our app.
+These tools include automatic scans of profiles for red-flag language and images; manual reviews of suspicious profiles, activity, and user generated reports; shadow-banning suspicious accounts; as well as blocking of email addresses, phone numbers, IP addresses and other identifiers associated with bad actors.
+We have a zero-tolerance policy on harassment and encourage our community to report any instance of misconduct and/or anyone who violates our Community Guidelines or Terms of Use, via the self-reporting tool featured on all Sathi profiles or by contacting our team online. In the event that we receive such a report, our dedicated community team takes appropriate measures, which may include removing the content, banning the user, or notifying the appropriate law enforcement resources.
+We are constantly evaluating and refining our processes, and will always work with law enforcement, where possible, to protect our users.
+\n\nResponse to Reports of Assault:\n
+Sathi users can easily report instances of abuse or assault in-app or online. We strongly encourage any user who believes they have been a victim of a crime to report it to law enforcement. Our team works to promptly investigate reported crimes, assess and take appropriate action, and fully cooperates with law enforcement in any investigation.
+When a user reports an assault to Sathi, we attempt to identify the alleged perpetrator and block the associated account. The incident is then reported to Match Group’s centralized safety repository and checked across our various brands to see if the user has other accounts on other platforms. If any are found, they are blocked as well.
+\n\nUser Education:\n
+We offer safety tips, both online and via the app, to educate and empower users to make smart and safe choices while interacting on Sathi.
+View our Tips for Staying Safe here
+Government Relations and Legislative Work:
+We understand that it’s our responsibility to play a role in defining the standards for the entire industry - which is why we support Match Group’s efforts to work closely with legislators and regulators across the world to define and pass new safety-focused laws that can help make both our users and those on other tech platforms safe. Our team is actively working with several Provience to promote legislation to help combat catfishing.
+We welcome the opportunity to work with governments around the world to make the Internet a safer place for everyone.
+Fraud
+We take the issue of fraud very seriously at Sathi. We have a zero-tolerance policy on predatory behavior of any kind. We have a dedicated fraud team that utilizes a network of industry leading technology that scans for fraud and reviews each and every member profile for red flag language, and conducts manual reviews of suspicious profiles, activity, and user generated reports. Ultimately, no one, whether they met on Sathi or not, should ever send money to someone they haven\'t met in person.  In addition, we encourage our members to report any individual who has requested financial information via our self-reporting tool.  Those two steps will greatly assist in stopping almost every scam in its tracks and help protect the next potential victim.  
+\n\nData Privacy and Platform Security:\n
+Our users privacy is a top priority at Sathi, and we work diligently to ensure that we go above and beyond applicable privacy laws and industry standards. We know that your time on the app is a private matter and have strict policies and technical systems in place, including encryption for user photos and messages and tools that restrict employee access to user communications and other user data. When it comes to Sathi users’ data, our sole mandate is keeping our users safe and their data private.
+Unlike other social apps, our business model is focused on providing users with premium features, including in-app upgrades and subscriptions, to enhance their experience on our app. We do not sell data to third parties or depend on advertising to maintain or grow our business. Your data is yours. As such, users can request a copy of their data here at any time. The most up-to-date information on our data practices is always available to the general public through our Privacy Policy, which can be also accessed through our app.
+Additionally, we are constantly improving our defenses in the battle against those with malicious intent.  However, we do not discuss any specific security tools we use or enhancements we may implement to best protect our users and avoid tipping off any would-be offenders.
+---
+\n\nAdditional Policies and Information:\n
+Our fundamental goal is to introduce our community of users to new people. And while this is a lot of fun, it’s important to remember that there are Community Guidelines that our users must abide by to help make Sathi the best app for meeting new people.
+We encourage our users to report any instance of bad behavior on or off our platform. Reporting a user for inappropriate conduct is straightforward and easy to do. On any given profile, users can tap the ‘3 dots’ icon and select ‘Report’. Users can also report another user by emailing help@sathijivanko.com.
+Below are more details about some of our policies that we have implemented to keep Sathi more safe.
+\n\nDedication to Inclusion:\n
+No matter your gender identity, sexual orientation, ethnicity, or background, Sathi welcomes you. We strive to make Sathi the most inclusive platform for meeting new people and have worked closely with organizations around the world to constantly improve our practices.
+\n\nHarassment:\n
+We have a zero-tolerance policy for harassment on our platform. We encourage all users to report any unacceptable behavior so that the community team can investigate and take appropriate action.
+\n\nUnderage Usage:\n
+Sathi is for users 18+, and we work hard to vigilantly maintain an adult’s only community. We utilize a network of industry-leading automated and manual moderation and review tools, systems and processes - and invest significant resources - to prevent and remove minors from our app.
+These tools may include automatic scans of profiles for red-flag language and images, manual reviews of suspicious profiles, activity, and user generated reports, as well as blocking email addresses, phone numbers and other identifiers associated with underage users trying to circumvent these restrictions. We also depend on our users to report any profiles that may depict a minor, so that we can investigate and remove, accordingly.
+We do not want minors on Sathi. Period.
+\n\nSolicitation/Prostitution:\n
+Solicitation of any kind - whether attempting to buy or sell - is against our Terms of Use. If a user encounters a profile violating our terms, we encourage them to report via the self-reporting tool featured on all Sathi profiles or online.  Making such a report allows our dedicated community team to take appropriate measures, which may include removing the profile or banning the user.
+\n\nIllegal Substances:\n
+Profiles (or Sathi users) promoting illegal substances violate our Terms of Use and we have a system in place to remove these profiles from the app. If a user encounters a profile violating our terms, we encourage them to report it in within the app.
+\n\nResources for Support, Advice, or Assistance:\n
+In case of emergency, call 100 (Nepal) or your local law enforcement agency.
+
+
+    </string>
+
+    <string name="community">
+
+Welcome to the Sathi community. If you’re honest, kind and respectful to others, you’ll always be welcome here. If you choose not to be, you may not last. Our goal is to allow users to express themselves freely as long as it doesn’t offend others. Everyone is held to the same standard on Sathi. We’re asking you to be considerate, think before you act, and abide by our community guidelines both on and offline. You heard that right: your offline behavior can lead to termination of your Sathi account.\n
+Below is a list of our community policies. If you violate any of these policies, you might be banned from Sathi. Seriously, don’t make us Swipe Left on you—because there will be no do-overs once we do. We encourage you to report any behavior that violates our policies, and read up on our Safety Tips.
+\n\nTinder is not for:\n\n
+Nudity/Sexual Content\n
+We’re not asking you to comb your hair to one side or even speak in full sentences; but please keep it classy and appropriate for public consumption. No nudity, no sexually explicit content, and don’t chronicle all of your sexual desires in your bio. Keep it clean.
+\n\nHarassment\n
+Do not engage, or encourage others to engage, in any targeted abuse or harassment against any other user. This includes sending any unsolicited sexual content to your matches. Reports of stalking, threats, bullying, or intimidation, are taken very seriously.
+\n\nViolence and Physical Harm\n
+We do not tolerate violent, graphic, or gory content on Sathi, or any actions or content that advocate for or threaten violence of any sort, including threatening or promoting terrorism. Physical assault, coercion, and any acts of violence are strictly prohibited.
+\nContent that advocates for or glorifies suicide or self-harm is also not allowed. In these situations, we may take a number of steps to assist the user, including reaching out with crisis resources.
+\n\nHate Speech\n
+Any content that promotes, advocates for, or condones racism, bigotry, hatred, or violence against individuals or groups based on factors like (but not limited to) race, ethnicity, religious affiliation, disability, gender, age, national origin, sexual orientation, or gender identity is not allowed.
+\n\nPrivate Information\n
+Don’t publicly broadcast any private information, yours or anyone else’s. This includes social security numbers, passports, passwords, financial information or unlisted contact information, such as phone numbers, email addresses, home/work address.
+\n\nSpam\n
+Don’t be fake. Be real instead. Don’t use Sathi to drive people to external websites via a link or otherwise.
+\n\nPromotion or Solicitation\n
+Soliciting other users is prohibited on Sathi. It’s fine to invite your matches to something that you’re doing, but if the purpose of your profile is to advertise your event or business, non-profit, political campaign, contest, or to conduct research, we may delete your account. While we’re excited that you’re doing a comedy show next week, please don’t use Sathi to promote it.
+\n\nProstitution and Trafficking\n
+Promoting or advocating for commercial sexual services, human trafficking or other non-consensual sexual acts is strictly prohibited and will result in your account being banned from Sathi.
+\n\nScamming\n
+Sathi has a zero-tolerance policy on predatory behavior of any kind. Anyone attempting to get other users’ private information for fraudulent or illegal activity may be banned. Any user caught sharing their own financial account information (Digipay, Esewa, Khalti etc.) for the purpose of receiving money from other users may also be banned from Sathi.
+\n\nImpersonation\n
+Be yourself! Don’t pretend to be someone else.\n
+Do not impersonate, or otherwise misrepresent affiliation, connection or association with, any person or entity. This includes parody accounts.
+\n\nMinors\n
+You must be 18 years of age or older to use Sathi. As such, we do not allow images of unaccompanied minors. If you want to post photos of your children, please make sure that you are in the photo as well. If you see a profile that includes an unaccompanied minor, encourages harm to a minor, or depicts a minor in a sexual or suggestive way, please report it immediately.
+\n\nCopyright and Trademark Infringement\n
+If it’s not yours, don’t post it. If your Sathi profile includes any work that is copyrighted or trademarked by others, don’t display it, unless you are allowed to do so.
+\n\nIllegal Usage\n
+Don’t use Sathi to do anything illegal. If it’s illegal IRL, it’s illegal on Sathi.
+\n\nOne Person, One Account\n
+Tinder accounts cannot have multiple owners, so don’t create an account with your friend or significant other. Additionally, please don’t maintain multiple Sathi accounts.
+\n\nThird Party Apps\n
+The use of any apps created by anyone other than Sathi that claim to offer our service or unlock special Sathi features (like auto-swipers) is not allowed.
+\n\nAccount Dormancy\n
+Sathi is fun to use... all the time! Use Sathi at the lake, use Sathi while eating cake. Use Sathi when you’re out, use Sathi when in doubt! But, if you don’t log in to your Sathi account in 4 years, we may delete your account for inactivity.
+
+
+\n\n\nREPORT ALL BAD BEHAVIOR
+
+\n\nSathi reserves the right to investigate and/or terminate your account without a refund of any purchases if you have misused the Service or behaved in a way that Sathi regards as inappropriate, unlawful, or in violation of the Terms of Use, including actions or communications that occur off the Service but involve users you meet through the Service.
+
+    </string>
+
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatWithUserActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/colorPrimary"
+            app:cardElevation="2dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:weightSum="20"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/chatWithUser_backButton"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_black_24dp"></ImageView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="48dp"
+                    android:id="@+id/chatWithUser_userProfilePhoto"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/temp_image"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chatWithUser_userName"
+                    android:textSize="45px"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16.5"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/chat_menu"
+                        android:layout_gravity="right"
+                        android:src="@drawable/three_dots"></ImageView>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_gradient"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"></ImageView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:id="@+id/chatRecyclerView"
+                android:layout_marginBottom="60dp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/chooseMedia_chatActivity"
+                    android:src="@drawable/camera_icon"
+                    android:layout_gravity="center"></ImageView>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7.25"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/chatWithUser_sendMessageEditText"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="bottom" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.75">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:id="@+id/chatWithUser_sendButton"
+                        android:layout_marginLeft="10dp"
+                        style="?android:borderlessButtonStyle"
+                        android:src="@drawable/right_icon"></ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

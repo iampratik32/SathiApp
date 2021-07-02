@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/light_gradient"
+    android:layout_height="match_parent"
+    tools:context=".OpenLocationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/location_icon"
+            android:scaleType="centerCrop"></ImageView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"></Space>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/materialBlack"
+            android:textStyle="bold"
+            android:textSize="40px"
+            android:text="Enable Location"></TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/materialBlack"
+            android:layout_centerInParent="true"
+            android:textSize="33px"
+            android:text="@string/enableLocation"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_margin="25dp"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Allow Location"
+                android:background="@drawable/themed_buttons"
+                android:textColor="@color/darkishWhite"
+                android:id="@+id/allowLocation_openLocation"></Button>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_theme_graident_back"
+    android:layout_height="match_parent"
+    tools:context=".LocationSettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="55dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="2dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/backButton_locationSettingsPage"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_back_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location Settings"
+                        android:textSize="55px"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="30dp"></TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:backgroundTint="@color/forUnRegistered">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="50px"
+                            android:text="Your Current Location"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="8dp"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                app:cardCornerRadius="7dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/currentCityCardView"
+                                android:background="@color/colorPrimary"
+                                android:elevation="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="10"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Current City"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/materialBlack"
+                                        android:textAlignment="center"
+                                        android:layout_weight="4"
+                                        android:textSize="40px"></TextView>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:textColor="@color/colorForMainGradientBack"
+                                        android:layout_weight="6"
+                                        android:textAlignment="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="40px"
+                                        android:gravity="center"
+                                        android:id="@+id/currentLocation_locationSettings"></TextView>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/curved_buttons"
+                            android:text="Update Your Location"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:textColor="@color/darkishWhite"
+                            android:id="@+id/updateLocation_settingsFragment"></Button>
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_margin="15dp"
+                            android:indeterminateTint="@color/darkishWhite"
+                            android:id="@+id/progressBar_upLocationSettings"></ProgressBar>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"></Space>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:backgroundTint="@color/forUnRegistered">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="50px"
+                            android:text="Your are Looking In"></TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="8dp"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                app:cardCornerRadius="7dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/lookingInCardView_SettingsFragment"
+                                android:background="@color/colorPrimary"
+                                android:elevation="2dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="10"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:text="Looking In"
+                                        android:layout_gravity="center"
+                                        android:textColor="@color/materialBlack"
+                                        android:textAlignment="center"
+                                        android:layout_weight="4"
+                                        android:textSize="40px"></TextView>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="10dp"
+                                        android:textColor="@color/colorForMainGradientBack"
+                                        android:layout_weight="6"
+                                        android:textAlignment="center"
+                                        android:textSize="40px"
+                                        android:gravity="center"
+                                        android:id="@+id/currentLookingIn_locationSettings"></TextView>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/curved_buttons"
+                            android:text="Change Sathi's Location"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:textColor="@color/darkishWhite"
+                            android:id="@+id/updateLookingFor_settingsFragment"></Button>
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_margin="15dp"
+                            android:indeterminateTint="@color/darkishWhite"
+                            android:id="@+id/progressBar_lfLocationSettings"></ProgressBar>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_gravity="left"
+        android:id="@+id/chatCardView"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="85dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relativeLayout_chat_holder"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/darkishWhite"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:src="@drawable/chat_potential_gradient"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:gravity="left"
+                android:layout_margin="10dp"
+                android:id="@+id/chat_potential_layout"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/chat_potential_userHolderImage"
+                    android:src="@drawable/temp_image"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="33px"
+                    android:textColor="@color/materialBlack"
+                    android:layout_weight="9"
+                    android:textStyle="bold"
+                    android:id="@+id/chat_potential_userHolderName"
+                    android:layout_marginLeft="20dp"></TextView>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:visibility="gone"
+                    android:layout_height="35dp"
+                    android:src="@drawable/verified"
+                    android:id="@+id/verified_cpHolder"></ImageView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_potential_userHolderId"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/chat_potential_userHolderLink"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/chatPotential_userGender"></TextView>
+
+
+</LinearLayout>

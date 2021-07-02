@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_gradient"
+    android:orientation="vertical"
+    tools:context=".RecoverAccountActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_white_37dp"
+        android:id="@+id/button_goBackRecoverEmail"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:textSize="24dp"
+        android:textColor="@color/colorForGradientBack"
+        android:textStyle="bold"
+        android:text="Account Recovery"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLoginAddress"
+        android:layout_width="match_parent"
+        app:hintTextColor="@color/darkishWhite"
+        app:boxBackgroundColor="@color/darkishWhite"
+        android:textColorHint="@color/darkishWhite"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailRecovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:textColorHint="@color/darkishWhite"
+            android:textColor="@color/darkishWhite"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorForGradientBack"
+        android:textSize="30px"
+        android:text="A recovery email will be sent to your email"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"></Space>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/darkishWhite"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressBar_recoverAccount"
+        android:layout_marginBottom="10dp"></ProgressBar>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/button_recoverEmail"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/themed_buttons"
+        android:textColor="@color/colorForGradientBack"
+        android:textStyle="bold"
+        android:text="Recover"></Button>
+
+
+</LinearLayout>

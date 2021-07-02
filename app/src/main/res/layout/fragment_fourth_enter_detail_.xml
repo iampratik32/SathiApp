@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FourthEnterDetail_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="24dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Just a few things more"></TextView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Select Your Display Picture"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:weightSum="5">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:src="@drawable/no_photo"
+                   android:id="@+id/displayPicture_fourthFragment"
+                   android:scaleType="centerCrop"></de.hdodenhof.circleimageview.CircleImageView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Write Your Bio"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/newUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="@color/darkishWhite"
+                app:boxBackgroundColor="@color/darkishWhite"
+                android:textColorHint="@color/darkishWhite"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/newUserBio_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:textColorHint="@color/darkishWhite"
+                    android:textColor="@color/darkishWhite"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:maxLength="500"
+                    android:layout_marginBottom="1dp"
+                    android:hint="Bio"
+                    android:maxLines="5"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/colorForGradientBack"
+                android:text="Write upto 500 words to charm yourself."
+                android:textSize="12dp"
+                android:layout_marginRight="15dp"
+                android:gravity="right"></TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/selectCity_fourthFragment"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="40dp"
+                android:visibility="gone"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/curved_buttons"
+                android:textColor="@color/darkishWhite"
+                android:textStyle="bold"
+                android:text="Select City"></Button>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/newUserFourthNextButton"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/themed_buttons"
+                android:textColor="@color/colorForGradientBack"
+                android:textStyle="bold"
+                android:text="Next"></Button>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorForGradientBack"
+            android:layout_marginTop="30dp"
+            android:text="@string/finalHurdleNewUser"
+            android:textSize="13dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"></TextView>
+
+    </RelativeLayout>
+
+</FrameLayout>

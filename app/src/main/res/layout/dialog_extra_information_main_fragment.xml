@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_gradient"
+        android:id="@+id/allUserInfo_frameLayoutMainFragment"
+        android:layout_alignParentBottom="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:id="@+id/viewPagerLayout_extraInformation"
+                    android:layout_marginTop="25dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/viewPager_extraInformation"
+                        android:layout_height="380dp"></androidx.viewpager.widget.ViewPager>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/slideIndicatorLayout"
+                        android:orientation="horizontal"></LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/extraInformation_userName"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:textSize="45px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/extraInformation_userAge"
+                        android:textStyle="bold"
+                        android:textSize="45px"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="8">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/extraInformationDownButton_mainFragment"
+                            android:layout_gravity="right"
+                            android:padding="25dp"
+                            android:src="@drawable/down_icon"></ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/materialBlack"
+                    android:id="@+id/extraInformation_userBio"
+                    android:textSize="40px"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/jobLayout_extraInformation"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="Job:  "
+                        android:textSize="40px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/userJob_extraInformation"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/lookingForLayout_extraInformation"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="Looking For:  "
+                        android:textSize="40px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/lookingFor_extraInformation"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/schoolLayout_extraInformation"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="School:  "
+                        android:textSize="40px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/school_extraInformation"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/collegeLayout_extraInformation"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="College:  "
+                        android:textSize="40px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/college_extraInformation"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/statusLayout_extraInformation"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="Status:  "
+                        android:textSize="40px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/status_extraInformation"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/hobbiesLayout_extraInformation"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:text="Hobbies:  "
+                        android:textSize="40px"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/materialBlack"
+                        android:id="@+id/hobbies_extraInformation"
+                        android:textSize="40px"></TextView>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></View>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </FrameLayout>
+</LinearLayout>

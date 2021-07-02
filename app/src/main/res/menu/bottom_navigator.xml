@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profileButton"
+        android:icon="@drawable/profile_button"
+        android:title=""></item>
+
+    <item
+        android:id="@+id/sathiButton"
+        android:icon="@drawable/sathi_logo_without_background"
+        android:title=""></item>
+
+    <item
+        android:id="@+id/chatButton"
+        android:icon="@drawable/chat_button"
+        android:title=""></item>
+
+</menu>

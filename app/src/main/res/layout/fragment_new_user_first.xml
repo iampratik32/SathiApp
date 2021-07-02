@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_purple_gradient"
+    tools:context=".NewUserFirstFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/sathi_logo_without_background"
+                        android:layout_marginTop="30dp"></ImageView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="30dp"
+                        android:textColor="@color/colorForGradientBack"
+                        android:textStyle="bold"
+                        android:text="Welcome to Sathi."></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Yeta ko rules haru follow garum na"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Ramilo Garau."></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Yeta ko rules haru follow garum na"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Ramilo Garau."></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Yeta ko rules haru follow garum na"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Ramilo Garau."></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Yeta ko rules haru follow garum na"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Ramilo Garau."></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="25dp"
+                        android:textSize="10dp"
+                        android:textColor="@color/darkishWhite"
+                        android:text="Yeta ko rules haru follow garum na"></TextView>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:id="@+id/yupButtonWelcomePage"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/curved_buttons"
+                        android:textColor="@color/darkishWhite"
+                        android:textStyle="bold"
+                        android:text="Yup. Yup."></Button>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

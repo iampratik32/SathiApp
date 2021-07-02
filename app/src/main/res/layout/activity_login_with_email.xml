@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_gradient"
+    android:layout_height="match_parent"
+    tools:context=".LoginWithEmailActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_white_37dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:id="@+id/closeButton_loginEmail"
+        android:layout_marginRight="20dp"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="25dp"
+        android:id="@+id/loginWithEmail_loginEmail"
+        android:layout_marginLeft="25dp"
+        android:textSize="24dp"
+        android:textColor="@color/colorForGradientBack"
+        android:textStyle="bold"
+        android:text="Login with Your Email"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLoginAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        app:hintTextColor="@color/darkishWhite"
+        app:boxBackgroundColor="@color/darkishWhite"
+        android:textColorHint="@color/darkishWhite"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginFromEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/darkishWhite"
+            android:textColor="@color/darkishWhite"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/darkishWhite"
+        android:id="@+id/progressBar_loginWithEmail"></ProgressBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:id="@+id/loginWithEmail_LoginButton"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/themed_buttons"
+            android:textColor="@color/colorForGradientBack"
+            android:textStyle="bold"
+            android:text="Login"></Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

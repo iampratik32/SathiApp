@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/light_gradient"
+    android:layout_height="match_parent"
+    tools:context=".ChatFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="20"
+            android:background="#E1E0DF"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="10"
+                android:id="@+id/chatButton_chatFragment"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#F38F76"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/chatText_chatFragment"
+                    android:text="Messages"
+                    android:textSize="45px"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="10"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedButton_chatFragment"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/feedText_chatFragment"
+                    android:textColor="#544643"
+                    android:text="Feed"
+                    android:textSize="45px"></TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/frameLayout_chatFragment"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

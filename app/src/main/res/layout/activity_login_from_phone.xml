@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_gradient"
+    tools:context=".LoginFromPhoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backButton_loginFromPhone"
+            android:src="@drawable/ic_close_white_37dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"></ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/loginPhonePage_textPhoneNumber"
+            android:textSize="25dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorForGradientBack"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_height="wrap_content"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/darkishWhite"
+            app:boxBackgroundColor="@color/darkishWhite"
+            android:textColorHint="@color/darkishWhite"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginFromPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/darkishWhite"
+                android:textColor="@color/darkishWhite"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:hint="  Phone Number"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/phoneLogin_buttonContinue"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/themed_buttons"
+            android:textColor="@color/colorForGradientBack"
+            android:textStyle="bold"
+            android:text="Continue"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:weightSum="5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/phoneLogin_buttonEmailLogin"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/themed_buttons"
+            android:textColor="@color/colorForGradientBack"
+            android:textStyle="bold"
+            android:text="Login with Email Instead"></Button>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorForGradientBack"
+            android:text="@string/phoneClickContinue"
+            android:textSize="13dp"
+            android:gravity="center"></TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

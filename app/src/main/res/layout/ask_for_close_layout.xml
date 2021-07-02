@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/dialog_gradient"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="50dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back?"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorForGradientBack"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="You will lose your progress."
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorForGradientBack"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/yesButton_dialogBox"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/curved_buttons"
+                    android:textColor="@color/darkishWhite"
+                    android:textStyle="bold"
+                    android:text="Yes"></Button>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/noButton_dialogBox"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/curved_buttons"
+                    android:textColor="@color/darkishWhite"
+                    android:textStyle="bold"
+                    android:text="No"></Button>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

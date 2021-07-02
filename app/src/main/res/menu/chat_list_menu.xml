@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/userProfile_listMenu"
+        android:title="View User"></item>
+
+    <item
+        android:id="@+id/deleteC_listMenu"
+        android:title="Delete Conversation"></item>
+
+    <item
+        android:id="@+id/unMatch_listMenu"
+        android:title="Unmatch"></item>
+
+    <item
+        android:id="@+id/report_listMenu"
+        android:title="Report"></item>
+
+
+
+</menu>

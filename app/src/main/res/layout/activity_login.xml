@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_theme_graident_back"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="250px"
+                android:layout_margin="50dp"
+                android:layout_height="250px"
+                android:src="@drawable/sathi_logo_without_background">
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/loginPage_buttonPhoneNumberLogin"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/curved_buttons"
+                    android:textColor="@color/colorForGradientBack"
+                    android:textStyle="bold"
+                    android:text="Login"></Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/register_loginPage"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/curved_buttons"
+                    android:textColor="@color/colorForGradientBack"
+                    android:textStyle="bold"
+                    android:text="Register New Account"></Button>
+
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/loginPage_buttonFacebookLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Login With Your Facebook"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/facebook_button"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/loginPage_textCantLogin"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Can't Login?"
+                    android:textColor="@color/colorForGradientBack"
+                    android:textSize="15dp"></TextView>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"></View>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

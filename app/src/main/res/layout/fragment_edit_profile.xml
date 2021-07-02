@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_theme_graident_back"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="55dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/colorPrimary"
+                app:cardElevation="2dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/backButton_EditProfileFragment"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_back_black_24dp"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:textSize="55px"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="30dp"></TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="45px"
+                        android:text="Let your Sathi know about you"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="150dp"
+                            android:id="@+id/displayImage_editProfileFragment"
+                            android:layout_height="150dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userName_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/userNameCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Name"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:textSize="40px"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterNameEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/enterNewName_editProfile"
+                                        android:inputType="textCapWords"
+                                        android:layout_height="wrap_content"
+                                        android:hint="  New Display Name" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newNameDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect To Instagram"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/connectInstagram_editProfile"
+                    android:textColor="@color/darkishWhite"
+                    android:background="@drawable/curved_buttons"></Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:maxLength="29"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userBio_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/bioCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Bio"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:textSize="40px"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterBioEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/enterNewBio_editProfile"
+                                        android:inputType="textMultiLine"
+                                        android:maxLength="500"
+                                        android:maxLines="5"
+                                        android:layout_height="wrap_content"
+                                        android:hint="  New Bio" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newBioDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userPreference_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/preferenceCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Preference"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:textSize="40px"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterPreferenceEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/spinnerPreference_editProfile"
+                                    android:layout_weight="8"></Spinner>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newPreferenceDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:padding="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="right">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="45px"
+                            android:textColor="@color/colorForGradientBack"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:inputType="number"
+                            android:id="@+id/userAge_editProfileFragment"></TextView>
+
+                        <Space
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"></Space>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="45px"
+                            android:text="Show Age?"
+                            android:textColor="@color/colorForGradientBack"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"></TextView>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:backgroundTint="@color/darkishWhite"
+                            android:buttonTint="@color/darkishWhite"
+                            android:drawableTint="@color/darkishWhite"
+                            android:id="@+id/showAgeCheckBox_editProfile"></CheckBox>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/ageCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Age"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:textSize="40px"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterAgeEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/enterNewAge_editProfile"
+                                        android:layout_height="wrap_content"
+                                        android:maxLength="2"
+                                        android:inputType="number"
+                                        android:hint="  New Age" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newAgeDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userJob_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/occupationCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Job"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:textSize="40px"
+                                    android:id="@+id/editJobTextView_EditProfile"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterOccupationEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/enterNewJob_editProfile"
+                                    android:inputType="textCapWords"
+                                    android:layout_height="wrap_content"
+                                    android:hint="  Your Job" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newOccupationDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userSchool_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/userSchoolCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Schooling"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:textSize="40px"
+                                    android:id="@+id/editUserSchoolTextView_EditProfile"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterUserSchoolEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/enterNewUserSchool_editProfile"
+                                        android:inputType="textCapWords"
+                                        android:layout_height="wrap_content"
+                                        android:hint="  Your School" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newUserSchoolDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userCollege_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/userCollegeCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your College"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:textSize="40px"
+                                    android:id="@+id/editUserCollegeTextView_EditProfile"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterUserCollegeEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/enterNewUserCollege_editProfile"
+                                        android:inputType="textCapWords"
+                                        android:layout_height="wrap_content"
+                                        android:hint="  Your College" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newUserCollegeDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userLookingFor_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/lookingForCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Sathi should be?"
+                                    android:layout_weight="8"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="2"
+                                    android:id="@+id/editUserLookingForTextView_EditProfile"
+                                    android:textSize="40px"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterLookingForEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:id="@+id/enterNewLookingFor_editProfile"
+                                        android:inputType="textPersonName"
+                                        android:layout_height="wrap_content"
+                                        android:hint="  Something interesting?" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newLookingForDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/hobbiesCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="List out your Hobbies"
+                                android:layout_weight="9"
+                                android:textSize="40px"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterHobbiesEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:scrollbars="horizontal"
+                                    android:id="@+id/recyclerViewHobbies_editProfile"></androidx.recyclerview.widget.RecyclerView>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="45px"
+                        android:textColor="@color/colorForGradientBack"
+                        android:layout_gravity="right"
+                        android:textStyle="bold"
+                        android:id="@+id/userStatus_editProfileFragment"></TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        app:cardCornerRadius="7dp"
+                        android:id="@+id/statusCardView_EditProfile"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorForGradientBack"
+                        android:elevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Your Status"
+                                    android:layout_weight="9"
+                                    android:textSize="40px"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_weight="1"
+                                    android:id="@+id/editUserStatusTextView_EditProfile"
+                                    android:textSize="40px"
+                                    android:text="Edit"></TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/toHide_enterStatusEditProfile"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:weightSum="10"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="8"
+                                    android:id="@+id/editUserStatusSpinner_EditProfile"></Spinner>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="center|center_vertical"
+                                    android:layout_weight="2"
+                                    android:id="@+id/newStatusDoneButton_editProfile"
+                                    android:background="@drawable/curved_buttons"
+                                    android:text="Done"></Button>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></View>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

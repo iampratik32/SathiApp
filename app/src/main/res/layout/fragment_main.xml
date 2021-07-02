@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainFrameLayout_mainFragment"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.lorentzos.flingswipe.SwipeFlingAdapterView
+                android:id="@+id/swipeFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:rotation_degrees="1"
+                android:layout_marginBottom="65dp"
+                tools:context=".MyActivity" />
+
+
+            <View
+                android:id="@+id/second_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="65dp"
+                android:background="#FBDAD3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:background="@drawable/light_gradient"
+                android:id="@+id/bottomLinearLayout_mainFragment"
+                android:layout_marginTop="-85dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" >
+                </Space>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:id="@+id/dislikeButton_mainFragment"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/no_icon" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" ></Space>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:id="@+id/rewindButton_mainFragment"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/rewind" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" >
+                </Space>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/extraInformationButton_mainFragment"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/up_icon" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" >
+                </Space>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:id="@+id/likeButton_mainFragment"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/heart" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" >
+                </Space>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

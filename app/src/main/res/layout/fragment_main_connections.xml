@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/light_gradient"
+    android:layout_height="match_parent"
+    tools:context=".MainConnectionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center"
+                android:text="Connections"
+                android:textColor="@color/materialBlack"
+                android:textSize="60px"
+                android:textStyle="bold"></TextView>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"></Space>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conncections"></ImageView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frameLayout_connections"
+            android:layout_marginBottom="52dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:id="@+id/navigator_connections"
+            android:theme="@style/BottomNavigationTheme"
+            android:layout_height="50dp"
+            android:background="@drawable/main_application_gradient_background"
+            android:layout_marginTop="-50dp"
+            app:menu="@menu/connection_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
